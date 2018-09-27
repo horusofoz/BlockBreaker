@@ -1068,6 +1068,21 @@ Prefab:
       propertyPath: paddle1
       value: 
       objectReference: {fileID: 1360518192}
+    - target: {fileID: 212503009821488658, guid: d63cbbbce97799a4c8be20bf1989c27b,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.5610028
+      objectReference: {fileID: 0}
+    - target: {fileID: 212503009821488658, guid: d63cbbbce97799a4c8be20bf1989c27b,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.42052332
+      objectReference: {fileID: 0}
+    - target: {fileID: 212503009821488658, guid: d63cbbbce97799a4c8be20bf1989c27b,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.8490566
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d63cbbbce97799a4c8be20bf1989c27b, type: 2}
   m_IsPrefabAsset: 0
