@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212503009821488658}
   - component: {fileID: 50652905081750148}
   - component: {fileID: 58232841040197604}
-  - component: {fileID: 114781876907084648}
   - component: {fileID: 82038594872810712}
+  - component: {fileID: 114781876907084648}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -188,6 +188,12 @@ MonoBehaviour:
   paddle1: {fileID: 0}
   xPush: 2
   yPush: 15
+  ballSounds:
+  - {fileID: 8300000, guid: fb2a8b451a8bd824281821b085637f55, type: 3}
+  - {fileID: 8300000, guid: 0430728bd264016489f57500c58fd343, type: 3}
+  - {fileID: 8300000, guid: fad2b8e8974e29c458547de7abadf131, type: 3}
+  - {fileID: 8300000, guid: 1ffc4bf8e74f8c2458531cffee2d2932, type: 3}
+  - {fileID: 8300000, guid: 789679407cff3f742bae739d4e9e6ff2, type: 3}
 --- !u!212 &212503009821488658
 SpriteRenderer:
   m_ObjectHideFlags: 1
