@@ -637,31 +637,6 @@ Prefab:
       propertyPath: paddle1
       value: 
       objectReference: {fileID: 239012577}
-    - target: {fileID: 82038594872810712, guid: d63cbbbce97799a4c8be20bf1989c27b,
-        type: 2}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114781876907084648, guid: d63cbbbce97799a4c8be20bf1989c27b,
-        type: 2}
-      propertyPath: ballSounds.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: fb2a8b451a8bd824281821b085637f55, type: 3}
-    - target: {fileID: 114781876907084648, guid: d63cbbbce97799a4c8be20bf1989c27b,
-        type: 2}
-      propertyPath: ballSounds.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: fb2a8b451a8bd824281821b085637f55, type: 3}
-    - target: {fileID: 114781876907084648, guid: d63cbbbce97799a4c8be20bf1989c27b,
-        type: 2}
-      propertyPath: ballSounds.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: fad2b8e8974e29c458547de7abadf131, type: 3}
-    - target: {fileID: 114781876907084648, guid: d63cbbbce97799a4c8be20bf1989c27b,
-        type: 2}
-      propertyPath: ballSounds.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: 1ffc4bf8e74f8c2458531cffee2d2932, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d63cbbbce97799a4c8be20bf1989c27b, type: 2}
   m_IsPrefabAsset: 0
