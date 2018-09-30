@@ -6,16 +6,19 @@ public class GameStatus : MonoBehaviour {
 
     // Config Parameters
     [Range(0.1f, 1.5f)] [SerializeField] float gameSpeed = 0.85f;
+    [SerializeField] int pointsPerBlockDestroyed = 50;
 
-	// Use this for initialization
-	void Start () 
-	{
-        Time.timeScale = gameSpeed;
-    }
+    // State Variables
+    [SerializeField] int currentScore = 0;
 	
 	// Update is called once per frame
 	void Update () 
 	{
-        gameSpeed = Time.timeScale;
+        Time.timeScale = gameSpeed;
+    }
+
+    public void AddToScore()
+    {
+        currentScore += pointsPerBlockDestroyed;
     }
 }
