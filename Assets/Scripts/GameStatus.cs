@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameStatus : MonoBehaviour {
 
@@ -8,11 +9,18 @@ public class GameStatus : MonoBehaviour {
     [Range(0.1f, 1.5f)] [SerializeField] float gameSpeed = 0.85f;
     [SerializeField] int pointsPerBlockDestroyed = 50;
 
+    [SerializeField] TextMeshProUGUI scoreText;
+
     // State Variables
     [SerializeField] int currentScore = 0;
-	
-	// Update is called once per frame
-	void Update () 
+
+    private void Start()
+    {
+        scoreText.text = currentScore.ToString();
+    }
+
+    // Update is called once per frame
+    void Update () 
 	{
         Time.timeScale = gameSpeed;
     }
@@ -20,5 +28,8 @@ public class GameStatus : MonoBehaviour {
     public void AddToScore()
     {
         currentScore += pointsPerBlockDestroyed;
+        scoreText.text = currentScore.ToString();
     }
+
+
 }
