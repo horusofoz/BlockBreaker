@@ -122,9 +122,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c7ddb5a09630b498e1fa7af41d0b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSpeed: 0.85
+  gameSpeed: 1
   pointsPerBlockDestroyed: 50
   scoreText: {fileID: 114993571235443266}
+  isAutoPlayEnabled: 0
   currentScore: 0
 --- !u!114 &114466059558590764
 MonoBehaviour:
