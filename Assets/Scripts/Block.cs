@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ public class Block : MonoBehaviour {
     [SerializeField] AudioClip breakSound;
     [SerializeField] GameObject blockSparklesVFX;
     [SerializeField] int maxHits;
+    [SerializeField] Sprite[] hitSprites;
 
     // Cached Reference
     Level level;
@@ -44,15 +46,26 @@ public class Block : MonoBehaviour {
         {
             DestroyBlock();
         }
+        else
+        {
+            ShowNextHitSprite();
+            Debug.Log("Changing Sprite");
+        }
+    }
+
+    private void ShowNextHitSprite()
+    {
+        int spriteIndex = timesHit - 1;
+        GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
     }
 
     private void DestroyBlock()
     {
-        AddScore();
+        FindObjectOfType<GameSession>().AddToScore();
         PlayBlockDestroyedSFX();
-        Destroy(gameObject);
         level.BlockDestroyed();
         TriggerSparklesVFX();
+        Destroy(gameObject);
     }
 
     private void PlayBlockDestroyedSFX()
@@ -62,7 +75,7 @@ public class Block : MonoBehaviour {
 
     private void AddScore()
     {
-        FindObjectOfType<GameSession>().AddToScore(); DestroyBlock();
+        
     }
 
     private void TriggerSparklesVFX()
