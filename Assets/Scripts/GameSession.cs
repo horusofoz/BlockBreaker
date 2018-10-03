@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameSession : MonoBehaviour {
@@ -54,4 +55,13 @@ public class GameSession : MonoBehaviour {
     {
         return isAutoPlayEnabled;
     }
+
+    public void SetFinalScore()
+    {
+        Destroy(scoreText);
+        TextMeshProUGUI finalScoreText = GameObject.Find("Final Score Text").GetComponent<TextMeshProUGUI>();
+        finalScoreText.text = currentScore.ToString();
+    }
+
+    
 }

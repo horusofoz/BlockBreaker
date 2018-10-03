@@ -61,7 +61,7 @@ public class Ball : MonoBehaviour {
         if(hasStarted)
         {
             AudioClip clip = ballSounds[Random.Range(0, ballSounds.Length)];
-            myAudioSource.PlayOneShot(clip);
+            myAudioSource.PlayOneShot(clip, 0.5f);
             myRigidbody.velocity += velocityTweak;
         }
     }

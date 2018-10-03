@@ -7,18 +7,16 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour {
 
     // Config Parameters
-    [SerializeField] SceneAsset startScene;
-    [SerializeField] SceneAsset gameOverScene;
 
     public void LoadStartScene()
     {
-        SceneManager.LoadScene(startScene.name);
+        SceneManager.LoadScene("StartMenu");
         FindObjectOfType<GameSession>().ResetGame();
     }
 
     public void LoadGameOverScene()
     {
-        SceneManager.LoadScene(gameOverScene.name);
+        SceneManager.LoadScene("GameOver");
     }
 
     public void LoadNextScene()

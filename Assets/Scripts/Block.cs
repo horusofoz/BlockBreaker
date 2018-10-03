@@ -77,7 +77,7 @@ public class Block : MonoBehaviour {
 
     private void PlayBlockDestroyedSFX()
     {
-        AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position);
+        AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position, 0.25f);
     }
 
     private void AddScore()
